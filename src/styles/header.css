@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-Regular.woff2') format('woff2');
+    font-weight: 100; 
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 16vw;
+    background-color: white;
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 27px;
+    object-fit: contain;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #1A1A1A;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #0077cc; 
+  }
+  
+  .email {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1A1A1A;
+    margin-left: auto; 
+  }
+  
+  .email a {
+    color: #1A1A1A;
+    text-decoration: underline;
+  }

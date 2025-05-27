@@ -1,5 +1,12 @@
-function Home() {
-    return <h1>Главная страница</h1>;
-  }
-  
-  export default Home;
+import HeroMain from '../components/HeroMain';
+
+const Home = () => {
+  return (
+    <>
+      <HeroMain />
+      {/* Здесь будут следующие блоки */}
+    </>
+  );
+};
+
+export default Home;
