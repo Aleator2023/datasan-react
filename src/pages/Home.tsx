@@ -1,10 +1,13 @@
 import HeroMain from '../components/HeroMain';
+import WhyNeeded from '../components/WhyNeeded';
+
 
 const Home = () => {
   return (
     <>
       <HeroMain />
-      {/* Здесь будут следующие блоки */}
+      <WhyNeeded />
+      
     </>
   );
 };

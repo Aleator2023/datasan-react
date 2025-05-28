@@ -6,13 +6,13 @@
     overflow: hidden;
     color: white;
     margin: 60px auto;
-    max-width: 1140px;
+    max-width: 1040px;
   }
   
   .hero-main-bg {
     position: absolute;
     top: 0px;
-    right: -40px;
+    right: -0px;
     height: 100%;
     z-index: 0;
     object-fit: cover;
