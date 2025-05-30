@@ -5,13 +5,13 @@
     font-style: normal;
     font-display: swap;
   }
-
-
-.header {
+  
+  .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 16vw;
+    padding: 26px 5vw;
     background-color: white;
     font-family: 'TT Travels', sans-serif;
     font-weight: 500;
@@ -27,6 +27,7 @@
     align-items: center;
     gap: 40px;
     flex-grow: 1;
+    flex-wrap: wrap;
   }
   
   .logo {
@@ -38,6 +39,7 @@
   .nav {
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
   }
   
   .nav a {
@@ -61,3 +63,36 @@
     color: #1A1A1A;
     text-decoration: underline;
   }
+  
+  @media (max-width: 991px) {
+    .nav {
+      display: none;
+    }
+  
+    .email {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      justify-content: space-between;
+    }
+  }
+  
+  /* Future hamburger icon (to be added as a button for toggling menu) */
+  .menu-icon {
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    .menu-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url('../assets/menu-icon.svg') no-repeat center center;
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+  

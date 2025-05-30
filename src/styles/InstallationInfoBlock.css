@@ -1,0 +1,42 @@
+.install-section {
+    position: relative;
+    background-color: #f6f6fb;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 60px auto;
+    max-width: 1300px;
+    padding: 60px 30px;
+  }
+  
+  .install-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .install-title {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'TT Travels', sans-serif;
+    color: #1A1A1A;
+  }
+  
+  .install-btn {
+    background-color: #F35E5E;
+    color: white;
+    font-weight: 500;
+    font-family: 'TT Travels', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .install-btn:hover {
+    background-color: #d94e4e;
+  }
