@@ -5,6 +5,7 @@ import SuitableBlock from '../components/SuitableBlock';
 import AdvantagesBlock from '../components/AdvantagesBlock';
 import InstallationInfoBlock from '../components/InstallationInfoBlock';
 import FeaturesBlock from '../components/FeaturesBlock';
+import HelpSection from '../components/HelpSection';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <AdvantagesBlock />
       <InstallationInfoBlock />
       <FeaturesBlock />
+      <HelpSection />
     </>
   );
 };
