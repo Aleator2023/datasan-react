@@ -1,0 +1,42 @@
+.tech-docs {
+    padding: 60px 5vw;
+    font-family: 'TT Travels', sans-serif;
+  }
+  
+  .tech-docs-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  .tech-docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tech-doc-item {
+    background-color: #f7f7fb;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: background 0.2s ease;
+  }
+  
+  .tech-doc-item:hover {
+    background-color: #efeff5;
+  }
+  
+  .doc-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .download-icon {
+    width: 24px;
+    height: 24px;
+  }

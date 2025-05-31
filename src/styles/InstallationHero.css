@@ -1,0 +1,75 @@
+.installation-hero {
+    position: relative;
+    background-color: #17173F;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 80px 5vw;
+    color: white;
+    max-width: 1300px;
+    margin: 40px auto;
+  }
+  
+  .installation-hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .installation-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .installation-hero h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'TT Travels', sans-serif;
+    margin-bottom: 24px;
+  }
+  
+  .highlight {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .installation-button {
+    display: inline-block;
+    background-color: #F35E5E;
+    padding: 14px 28px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'TT Travels', sans-serif;
+    transition: background 0.3s ease;
+  }
+  
+  .installation-button:hover {
+    background-color: #d94e4e;
+  }
+
+  .underline-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-bg {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 16px;
+    width: 100%;
+    background-image: url('../assets/path.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    pointer-events: none;
+    z-index: -1; 
+  }
+

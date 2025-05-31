@@ -1,13 +1,15 @@
+import FunctionalFeaturesBlock from '../components/FunctionalFeaturesBlock.tsx';
+import InstallationHero from '../components/InstallationHero.tsx';
+import TechnicalDocsBlock from '../components/TechnicalDocsBlock.tsx';
+
 const Installation = () => {
-    return (
-      <div>
-        <h1>Установка и эксплуатация</h1>
-        <p>
-          Здесь вы найдете инструкции по установке, настройке и эксплуатации решения DataSan.
-          Мы рекомендуем обращаться к технической документации и руководствам пользователя.
-        </p>
-      </div>
-    );
-  };
-  
-  export default Installation;
+  return (
+    <>
+      <InstallationHero />
+      <FunctionalFeaturesBlock />
+      <TechnicalDocsBlock />
+    </>
+  );
+};
+
+export default Installation;
