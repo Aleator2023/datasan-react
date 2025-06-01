@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# 🌐 DataSan: лендинг решения по деперсонализации
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это сайт-презентация продукта **DataSan** — решения для деперсонализации баз данных, разработанного компанией **Перфоманс Лаб**. Проект реализован на **React + TypeScript**, с использованием **адаптивной вёрстки**, стилизованных компонентов и роутинга.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Технологии
 
-## Expanding the ESLint configuration
+- React + TypeScript
+- Vite (быстрая сборка)
+- React Router DOM
+- CSS/SCSS
+- Bootstrap-сетка
+- Адаптивная вёрстка
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📥 Как запустить проект локально
+
+### 1. Склонируйте репозиторий
+
+```bash
+git clone https://github.com/Aleator2023/datasan-react.git
+cd datasan-react
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Установите зависимости
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+или, если вы используете Yarn:
+
+```bash
+yarn
+```
+
+### 3. Запустите проект
+
+```bash
+npm run dev
+```
+
+или:
+
+```bash
+yarn dev
+```
+
+Откройте в браузере: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📁 Структура проекта
+
+```
+datasan-react/
+├── public/                   # Статические файлы
+├── src/
+│   ├── assets/               # Изображения, шрифты, иконки
+│   ├── components/           # Компоненты интерфейса (Hero, Header, Footer и т.д.)
+│   ├── pages/                # Отдельные страницы (например, Установка и эксплуатация)
+│   ├── styles/               # Файлы CSS/SCSS
+│   ├── App.tsx               # Основной компонент маршрутизации
+│   └── main.tsx              # Точка входа в приложение
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+---
+
+## ⚙️ Основные команды
+
+| Команда         | Назначение                                |
+|-----------------|--------------------------------------------|
+| `npm run dev`   | Запуск проекта в режиме разработки         |
+| `npm run build` | Сборка проекта для продакшена в `dist/`    |
+| `npm run preview` | Предпросмотр собранной версии локально   |
+
+---
+
+## 📧 Контакты
+
+- Компания: [https://www.performance-lab.ru](https://www.performance-lab.ru)
+
+---
+
+## 🛡️ Лицензия
+
+Проект создан в демонстрационных целях. Все права принадлежат © ООО «Перфоманс Лаб».
