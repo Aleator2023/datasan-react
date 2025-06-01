@@ -1,98 +1,111 @@
 @font-face {
-    font-family: 'TT Travels';
-    src: url('../assets/fonts/TTTravels-Regular.woff2') format('woff2');
-    font-weight: 100; 
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 26px 5vw;
-    background-color: white;
-    font-family: 'TT Travels', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 0.95;
-    letter-spacing: -0.015em;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-grow: 1;
-    flex-wrap: wrap;
-  }
-  
-  .logo {
-    width: 200px;
-    height: 27px;
-    object-fit: contain;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #1A1A1A;
-    transition: color 0.2s ease;
-  }
-  
-  .nav a:hover {
-    color: #0077cc; 
-  }
-  
+  font-family: 'TT Travels';
+  src: url('../assets/fonts/TTTravels-Regular.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  font-family: 'TT Travels', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  width: 200px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1A1A1A;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #0077cc;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1A1A1A;
+  margin-left: auto;
+}
+
+.email a {
+  color: #1A1A1A;
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  background: url('../assets/menu-icon.svg') no-repeat center center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.open {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 20px 5vw;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  z-index: 99;
+}
+
+.mobile-nav a {
+  color: #1A1A1A;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+@media (max-width: 960px) {
+  .nav,
   .email {
-    font-weight: 500;
-    font-size: 16px;
-    color: #1A1A1A;
-    margin-left: auto; 
-  }
-  
-  .email a {
-    color: #1A1A1A;
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 991px) {
-    .nav {
-      display: none;
-    }
-  
-    .email {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .header {
-      justify-content: space-between;
-    }
-  }
-  
-  /* Future hamburger icon (to be added as a button for toggling menu) */
-  .menu-icon {
     display: none;
   }
-  
-  @media (max-width: 991px) {
-    .menu-icon {
-      display: block;
-      width: 30px;
-      height: 30px;
-      background: url('../assets/menu-icon.svg') no-repeat center center;
-      background-size: contain;
-      cursor: pointer;
-    }
+
+  .menu-icon {
+    display: block;
+    margin-left: auto;
   }
-  
+}
