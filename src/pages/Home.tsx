@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import HeroMain from '../components/HeroMain';
 import WhyNeeded from '../components/WhyNeeded';
 import SolutionBlock from '../components/SolutionBlock';
@@ -8,6 +9,9 @@ import FeaturesBlock from '../components/FeaturesBlock';
 import HelpSection from '../components/HelpSection';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'DataSan - Деперсонализация базы данных';
+  }, []);
   return (
     <>
       <HeroMain />
