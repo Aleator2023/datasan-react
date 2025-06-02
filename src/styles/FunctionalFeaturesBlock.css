@@ -9,6 +9,7 @@
     line-height: 1.2;
     margin-bottom: 40px;
     position: relative;
+    display: inline-block;
   }
   
   .underline-wrapper {
@@ -24,7 +25,7 @@
     height: 20px;
     background-image: url('../assets/path.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: bottom left;
     pointer-events: none;
     z-index: -1;
