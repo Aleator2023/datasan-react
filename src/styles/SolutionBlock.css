@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 24px;
-  
+    max-width: 1170px;
     background-image: url('../assets/vector9.png');
     background-repeat: no-repeat;
     background-position: center bottom;
