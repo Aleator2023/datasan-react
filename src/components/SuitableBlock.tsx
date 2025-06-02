@@ -1,6 +1,5 @@
 import '../styles/SuitableBlock.css';
 import chartGraphic from '../assets/vector2.svg';
-import underline from '../assets/path.png';
 
 const SuitableBlock = () => {
   return (
@@ -9,9 +8,10 @@ const SuitableBlock = () => {
         <div className="col-12 col-md-7">
           <h2 className="suitable-title">
             В каких случаях вам<br />
-            подойдёт <span className="highlight">
+            подойдёт{' '}
+            <span className="underline-wrapper">
               DataSan
-              <img src={underline} alt="underline" className="underline" />
+              <span className="underline-bg"></span>
             </span>
           </h2>
           <p className="suitable-text">
