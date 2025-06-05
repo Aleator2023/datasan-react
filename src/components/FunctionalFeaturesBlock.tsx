@@ -63,8 +63,8 @@ const FunctionalFeaturesBlock = () => {
     <h2 className="section-title">
   <span className="underline-wrapper">
     Функциональные
-    <span className="underline-bg"></span>
-  </span>
+    <span className="underline-bg-long"></span>
+    </span>
   <br />
   возможности
 </h2>
