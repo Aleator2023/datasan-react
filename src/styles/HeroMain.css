@@ -1,28 +1,41 @@
 .hero-main {
-  position: relative;
-  background-color: #17173F;
-  border-radius: 20px;
-  padding: 80px 5vw;
-  overflow: visible;
-  color: white;
-  margin: auto;
-  max-width: 1170px;
-
-  background-image: url('../assets/Vector 921.png');
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position:  top right -200px;
-
+  background-color: transparent;
 }
 
-.hero-main-bg {
+.hero-bg-inner {
+  position: relative; 
+  background-color: #17173F;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 5vw;
+  max-width: 1170px;
+  color: white;
+  overflow: visible;
+}
+
+.hero-bg-inner::after {
+  content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  top: 0px;          
+  right: -160px;     
+  width: 800px;       
+  height: 100%;        
+  background-image: url('../assets/Vector 921.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  pointer-events: none;
   z-index: 0;
-  object-fit: cover;
+
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 80%);
+  mask-image: linear-gradient(to right, black 90%, transparent 80%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hero-main-content {
+  position: relative;
 }
 
 .hero-main-content {
