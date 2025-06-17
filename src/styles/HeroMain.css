@@ -6,36 +6,87 @@
   position: relative; 
   background-color: #17173F;
   border-radius: 20px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 80px 5vw;
   max-width: 1170px;
   color: white;
   overflow: visible;
+  box-sizing: border-box;
 }
 
 .hero-bg-inner::after {
   content: '';
   position: absolute;
-  top: 0px;          
-  right: -160px;     
-  width: 800px;       
-  height: 100%;        
+  top: 0px;
+  right: -190px;
+  width: 800px;
+  height: 100%;
   background-image: url('../assets/Vector 921.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 120%;
   background-position: right top;
   pointer-events: none;
   z-index: 0;
 
-  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 80%);
-  mask-image: linear-gradient(to right, black 90%, transparent 80%);
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 70%);
+  mask-image: linear-gradient(to right, black 82%, transparent 70%);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
-.hero-main-content {
-  position: relative;
+@media (max-width: 960px) {
+  .hero-bg-inner::after {
+    -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    background-size: auto 100%;
+    background-position: right top;
+    right: -100px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-bg-inner {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-main {
+    padding: 40px 4vw;
+    background-size: 100%;
+    background-position: top right;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .hero-bg-inner::after {
+    display: none;
+  }
+
+  .hero-main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-main p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-main-button {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
+
+  .underline-bg {
+    width: 100px;
+    height: 12px;
+    background-size: 100% auto;
+  }
 }
 
 .hero-main-content {
@@ -45,7 +96,7 @@
 }
 
 .hero-main h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.2;
   font-family: 'TT Travels', sans-serif;
   font-weight: 500;
@@ -96,34 +147,6 @@
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .hero-main {
-    padding: 40px 4vw;
-    background-size: 120%;
-    background-position: top right;
-    max-width: 100%;
-    border-radius: 16px;
-  }
-
-  .hero-main h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero-main p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-main-button {
-    font-size: 0.875rem;
-    padding: 10px 20px;
-  }
-
-  .underline-bg {
-    width: 100px;
-    height: 12px;
-    background-size: 100% auto;
-  }
+body {
+  overflow-x: hidden;
 }
-
