@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import PhoneInput from 'react-phone-number-input';
-import type { Country } from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
-import styles from '../styles/PhoneInputWithCountry.module.css';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 interface PhoneInputWithCountryProps {
   value: string | undefined;
@@ -10,40 +8,34 @@ interface PhoneInputWithCountryProps {
 }
 
 const PhoneInputWithCountry: React.FC<PhoneInputWithCountryProps> = ({ value, onChange }) => {
-  const [country, setCountry] = useState<Country>('RU');
-  const [hasGeoUpdated, setHasGeoUpdated] = useState<boolean>(false);
+  const [defaultCountry, setDefaultCountry] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('https://ipapi.co/json')
       .then(res => res.json())
       .then(data => {
         if (data?.country_code) {
-          const detected = data.country_code.toUpperCase() as Country;
-          if (!hasGeoUpdated) {
-            setCountry(detected);
-            setHasGeoUpdated(true);
-          }
+          setDefaultCountry(data.country_code.toLowerCase());
+        } else {
+          setDefaultCountry('ru');
         }
       })
       .catch(() => {
-        // оставим 'RU', если не удалось определить
-        setCountry('RU');
+        setDefaultCountry('ru');
       });
-  }, [hasGeoUpdated]);
+  }, []);
+
+  if (!defaultCountry) return null;
 
   return (
-    <div className={styles.phoneInputWrapper}>
-      <PhoneInput
-        defaultCountry="RU"
-        country={country}
-        onCountryChange={(c) => setCountry(c as Country)}
-        international
-        countryCallingCodeEditable={false}
-        value={value}
-        onChange={onChange}
-        placeholder="999-999-9999"
-      />
-    </div>
+    <PhoneInput
+      defaultCountry={defaultCountry}
+      value={value || ''}
+      onChange={onChange}
+      inputClassName="custom-phone-input-field"
+      className="custom-phone-input-container"
+      placeholder="999-999-9999"
+    />
   );
 };
 

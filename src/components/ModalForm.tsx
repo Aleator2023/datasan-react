@@ -36,7 +36,9 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
         </p>
         <form onSubmit={handleSubmit}>
           <input name="name" type="text" placeholder="ФИО" required className="input-field" />
-          <PhoneInputWithCountry value={phone} onChange={setPhone} />
+          <div className="input-field phone-wrapper">
+  <PhoneInputWithCountry value={phone} onChange={setPhone} />
+</div>
           <input name="email" type="email" placeholder="Email" required className="input-field" />
           <button type="submit" className="submit-button">Отправить</button>
         </form>
