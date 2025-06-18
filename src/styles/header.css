@@ -14,7 +14,7 @@
   background-color: white;
   font-family: 'TT Travels', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
@@ -30,15 +30,17 @@
 }
 
 .logo {
-  width: 200px;
+  width: 220px;
   height: 27px;
   object-fit: contain;
+  margin-left: -25px;
 }
 
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 70px;
   flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 .nav a {
@@ -52,10 +54,10 @@
 }
 
 .email {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 15px;
   color: #1A1A1A;
-  margin-left: auto;
+  margin-right: -10px;
 }
 
 .email a {
@@ -67,8 +69,8 @@
   display: none;
   background: url('../assets/menu-icon.svg') no-repeat center center;
   background-size: contain;
-  width: 32px;
-  height: 32px;
+  width: 82px;
+  height: 52px;
   cursor: pointer;
 }
 
@@ -104,8 +106,15 @@
     display: none;
   }
 
+  .logo {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
   .menu-icon {
     display: block;
     margin-left: auto;
-  }
+    }
 }
