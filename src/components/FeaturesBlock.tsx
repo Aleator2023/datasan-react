@@ -1,7 +1,7 @@
 import '../styles/FeaturesBlock.css';
 import background from '../assets/vector1.png';
-import jenkins from '../assets/vector5.svg';
-import gitlab from '../assets/vector6.svg';
+import jenkins from '../assets/vector6.svg';
+import gitlab from '../assets/vector5.svg';
 
 const FeaturesBlock = () => {
   return (
