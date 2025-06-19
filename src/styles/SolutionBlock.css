@@ -1,7 +1,9 @@
 .solution-section {
     background-color: #f8f8fb;
-    padding: 60px 30px;
-    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    margin-top: 40px;
     position: relative;
     overflow: hidden;
     border-radius: 24px;
@@ -13,17 +15,20 @@
   }
   
   .solution-title {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 1.2;
-    font-family: 'TT Travels', sans-serif;
-    font-weight: 500;
+    font-family: 'TTNorms', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   
   .solution-text {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 30px;
     color: #1a1a1a;
+     margin-left: 20px;
   }
   
   .solution-btn {
@@ -32,10 +37,11 @@
     border: none;
     border-radius: 6px;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.3s;
+     margin-left: 20px;
   }
   
   .solution-btn:hover {
