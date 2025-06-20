@@ -29,6 +29,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-close" onClick={onClose}>×</div>
       <div className="modal-container" onClick={(e) => e.stopPropagation()}>
         <h2 className="heading">Получите бесплатное пошаговое руководство по деперсонализации данных!</h2>
         <p className="description">
