@@ -9,7 +9,7 @@ const InstallationHero = () => {
       <div className="installation-hero-content">
       <h1 className="installation-title">
   <span className="underline-wrapper">
-    DataSan
+    DataSan:
     <span className="underline-bg"></span>
   </span>
   <br />

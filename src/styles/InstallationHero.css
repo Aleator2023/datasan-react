@@ -25,11 +25,12 @@
   }
   
   .installation-hero h1 {
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 300;
     line-height: 1.2;
-    font-family: 'TT Travels', sans-serif;
-    margin-bottom: 24px;
+    letter-spacing: 1px;
+    font-family: 'TTNorms', Arial, sans-serif;
+    margin-bottom: 34px;
   }
   
   .highlight {
@@ -39,11 +40,11 @@
   
   .installation-button {
     display: inline-block;
-    background-color: #F35E5E;
-    padding: 14px 28px;
+    background-color: #Ff5959;
+    padding: 12px 40px;
     border-radius: 8px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     font-family: 'TT Travels', sans-serif;
