@@ -1,10 +1,11 @@
 .tech-docs {
-    padding: 60px 5vw;
-    font-family: 'TT Travels', sans-serif;
+    padding: 10px 5vw;
+    font-family: 'TTNorms', Arial, sans-serif;
   }
   
   .tech-docs-title {
-    font-size: 36px;
+    font-size: 48px;
+    letter-spacing: 2px;
     font-weight: 500;
     margin-bottom: 40px;
   }
@@ -12,13 +13,13 @@
   .tech-docs-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
   
   .tech-doc-item {
     background-color: #f7f7fb;
     border-radius: 24px;
-    padding: 24px;
+    padding: 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,11 +33,11 @@
   }
   
   .doc-title {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
   }
   
   .download-icon {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
   }

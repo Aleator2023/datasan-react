@@ -5,7 +5,7 @@ const features = [
     number: '01',
     text: (
       <>
-        Внедрение функций для обработки:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внедрение функций для обработки:
         <ul>
           <li>уникальных типов данных, например, ОГРН и ИНН;</li>
           <li>динамических типов данных, таких как транслитерация ФИО;</li>
@@ -17,7 +17,7 @@ const features = [
     number: '02',
     text: (
       <>
-        Защита данных за счёт кодирования:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Защита данных за счёт кодирования:
         <ul>
           <li>хеширование — основной метод кодирования, реализованный на основе MD5;</li>
           <li>мэппинг — метод кодирования, реализованный на основе сопоставления символов;</li>
@@ -60,23 +60,34 @@ const features = [
 const FunctionalFeaturesBlock = () => {
   return (
     <section className="functional-block container">
-    <h2 className="section-title">
-  <span className="underline-wrapper">
-    Функциональные
-    <span className="underline-bg-long"></span>
-    </span>
-  <br />
-  возможности
-</h2>
+      <h2 className="section-title">
+        <span className="underline-wrapper">
+          Функциональные
+          <span className="underline-bg-long"></span>
+        </span>
+        <br />
+        возможности
+      </h2>
 
-<div className="features-grid">
-  {features.map((item, idx) => (
-    <div key={idx} className="feature-box">
-      <span className="feature-number">{item.number}</span>
-      <div className="feature-text">{item.text}</div>
-    </div>
-  ))}
-</div>
+      <div className="features-wrapper">
+        <div className="features-group first-group">
+          {features.slice(0, 4).map((item, idx) => (
+            <div key={idx} className="feature-box">
+              <span className="feature-number">{item.number}</span>
+              <div className="feature-text">{item.text}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="features-group second-group">
+          {features.slice(4).map((item, idx) => (
+            <div key={idx + 4} className="feature-box">
+              <span className="feature-number">{item.number}</span>
+              <div className="feature-text">{item.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
