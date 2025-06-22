@@ -1,19 +1,12 @@
-@font-face {
-  font-family: 'TT Travels';
-  src: url('../assets/fonts/TTTravels-Regular.woff2') format('woff2');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 35px;
   background-color: white;
-  font-family: 'TT Travels', sans-serif;
-  font-weight: 500;
+  font-family: 'TTNorms', Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
   max-width: 1170px;
   margin: 0 auto;
@@ -38,7 +31,7 @@
 
 .nav {
   display: flex;
-  gap: 70px;
+  gap: clamp(16px, 4vw, 70px);
   flex-wrap: wrap;
   margin-left: 40px;
 }

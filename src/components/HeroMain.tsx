@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/HeroMain.css';
 import ModalForm from './ModalForm';
+import bgImage from '../assets/Vector 921.png'; 
 
 const HeroMain = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -8,7 +9,9 @@ const HeroMain = () => {
   return (
     <>
       <section className="hero-main">
+        
         <div className="hero-bg-inner">
+          <img src={bgImage} alt="background" className="hero-bg" />
           <div className="hero-main-content">
             <h1 className="hero-main-title">
               <span className="underline-wrapper">

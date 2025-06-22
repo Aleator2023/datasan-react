@@ -1,51 +1,121 @@
-.footer {
-  background-color: white;
-  font-family: 'TTNorms', Arial, sans-serif;
-  font-size: 16px;
-  color: #1a1a1a;
-  border-top: none;
+.footer-container {
+  display: grid;
+  gap: 24px;
   max-width: 1170px;
-  margin: 0 auto;            
+  margin: 0 auto;
+  grid-template-columns: 1fr; 
+  padding: 50px 0px;
 }
 
 .footer-logo {
   width: 271px;
   height: 37px;
+}
+
+.footer-company-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-company-name {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-company-info {
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.footer-company-info a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+
+.footer-links-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: end;
+}
+
+.footer-link a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+@media (max-width: 639px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
   }
 
-.footer-info {
-  line-height: 1.6;
-  font-size: 16px;
-  text-align: left;
+  .footer-copy {
+    grid-column: span 1;
+  }
+
+  .footer-links-block {
+    text-align: left; 
+  }
 }
 
-.footer-links a {
-  color: #1a1a1a;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 4px;
-  font-size: 16px;
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    padding: 20px 15px;
+  }
+
+  .footer-left-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 24px;
+  }
+
+  .footer-company-block {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-links-block {
+    text-align: left;
+    margin-top: -100px;
+    font-size: 18px;
+  }
+
+  .footer-copy {
+    margin-top: auto;
+    text-align: left;
+  }
 }
 
-.footer-info a {
-  color: #1a1a1a;
-  text-decoration: underline;
-}
 
-.footer-links a:hover {
-  text-decoration: underline;
-}
+@media (min-width: 960px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-.footer-bottom {
-  font-size: 14px;
-  text-align: left;
-  margin-top: -48px;
-}
+  .footer-copy {
+    grid-column: span 1;
+    text-align: left;
+    margin-top: -70px;
 
-.footer-info strong {
-  font-size: 20px;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 8px;
-  font-family: 'TTNorms', sans-serif;
+  }
 }

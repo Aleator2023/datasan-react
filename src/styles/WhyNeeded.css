@@ -54,10 +54,50 @@
   .why-title {
     font-size: 28px;
     margin-bottom: 24px;
+    margin-left: 0px;
   }
 
   .underline-bg {
     width: 100px;
     height: 12px;
+  }
+
+    .why-image img {
+    margin-left: 0;        
+    max-width: 100%;        
+  }
+}
+
+@media (max-width: 960px) {
+    .why-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+  }
+
+  .why-image img {
+    margin-left: 0;        
+    max-width: 100%;        
+  }
+
+  .why-section p {
+    margin-left: 0;        
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .why-title {
+    margin-left: 0px;           
+    font-size: 40px;            
+    font-weight: 600;           
+  }
+
+  .why-image img {
+    padding: 10px;         
+    max-width: 100%;            
+  }
+
+  .why-section p {
+    margin-left: 0px;          
   }
 }

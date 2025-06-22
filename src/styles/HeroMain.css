@@ -2,6 +2,16 @@
   background-color: transparent;
 }
 
+ .hero-bg {
+    position: absolute;
+    top: 0;
+    right: -280px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+
 .hero-bg-inner {
   position: relative; 
   background-color: #17173F;
@@ -13,28 +23,9 @@
   color: white;
   overflow: visible;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.hero-bg-inner::after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: -255px;
-  width: 800px;
-  height: 100%;
-  background-image: url('../assets/Vector 921.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: right top;
-  pointer-events: none;
-  z-index: 0;
-  -webkit-mask-image: linear-gradient(to right, black 68.1%, transparent 60%);
-  mask-image: linear-gradient(to right, black 68.1%, transparent 60%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-}
 
 @media (max-width: 960px) {
   .hero-bg-inner::after {
@@ -150,4 +141,51 @@
 
 body {
   overflow-x: hidden;
+}
+
+@media (max-width: 639px) {
+  .hero-main {
+    padding: 0px 6px;
+    background-color: transparent;
+  }
+
+  .hero-bg-inner {
+    padding: 2px 20px 24px 20px;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .hero-main-content {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .hero-main h1 {
+    font-size: 2.25rem;
+    margin: 20px 0 12px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .hero-main p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .hero-main-button {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+    width: auto;
+    max-width: none;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .underline-bg {
+    width: 90px;
+    height: 10px;
+    bottom: -5px;
+  }
 }
