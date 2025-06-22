@@ -1,5 +1,6 @@
 .hero-main {
   background-color: transparent;
+  font-family: 'TTNorms', Arial, sans-serif;
 }
 
  .hero-bg {
@@ -26,6 +27,12 @@
   overflow: hidden;
 }
 
+.hero-main-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 300;
+  }
+
 
 @media (max-width: 960px) {
   .hero-bg-inner::after {
@@ -43,6 +50,12 @@
     padding: 40px 20px;
   }
 }
+
+ .hero-main-button {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+    font-weight: 300;
+  }
 
 @media (max-width: 768px) {
   .hero-main {
@@ -70,6 +83,7 @@
   .hero-main-button {
     font-size: 0.875rem;
     padding: 10px 20px;
+    font-weight: 300;
   }
 
   .underline-bg {
@@ -106,9 +120,9 @@
 .hero-main-button {
   display: inline-block;
   padding: 0.875rem 1.75rem;
-  background-color: #F35E5E;
+  background-color: #Ff5959;
   color: white;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   border-radius: 8px;
   border: none;
@@ -176,6 +190,7 @@ body {
 
   .hero-main-button {
     font-size: 0.875rem;
+    font-weight: 300;
     padding: 8px 16px;
     width: auto;
     max-width: none;
