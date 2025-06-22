@@ -77,4 +77,62 @@
   padding: 32px;
 }
   
-    
+@media (max-width: 767px) {
+  .advantages-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .adv-card {
+    padding: 15px;
+    margin-bottom: 1px;
+  }
+
+  .adv-text p {
+    font-size: 16px;
+  }
+
+  .adv-number {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .adv-card-performance {
+    padding: 14px 14px 14px 14px;
+  }
+
+  .adv-card-performance .performance-text {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .adv-card-performance .adv-number {
+    margin-bottom: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+
+  .row > .col-12.col-md-6.col-lg-3 {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  
+  .adv-card-performance {
+    flex-direction: column;
+  }
+
+  .adv-card-performance .adv-image {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .adv-card-performance .adv-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}

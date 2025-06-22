@@ -25,8 +25,7 @@ const SolutionBlock = () => {
         </div>
 
         <div className="col-12 col-md-3 text-center mt-4 mt-md-0">
-          {/* изображение или иллюстрация если нужно */}
-        </div>
+         </div>
       </div>
 
       <ModalForm isOpen={isModalOpen} onClose={closeModal} />

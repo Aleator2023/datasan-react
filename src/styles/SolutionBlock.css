@@ -48,3 +48,21 @@
     background-color: #e44a4a;
   }
   
+
+  @media (max-width: 768px) {
+  .solution-title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .solution-text {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .solution-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+}

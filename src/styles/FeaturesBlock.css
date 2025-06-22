@@ -60,3 +60,37 @@
 .bg-light-pink {
   background-color: #ffe5e2;
 }
+
+@media (max-width: 991px) {
+  .extra-title {
+    font-size: 32px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .extra-subtext {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+    .integration-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+    .integration-box {
+    flex: 0 1 150px;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .integration-img {
+    max-height: 40px;
+    width: auto;
+  }
+}

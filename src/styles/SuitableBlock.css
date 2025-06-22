@@ -60,3 +60,57 @@
   margin-left: 150px;
   margin-right: 0;
 }
+
+@media (max-width: 991px) {
+  .suitable-section {
+    padding: 40px 20px;
+  }
+
+  .suitable-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .suitable-text {
+    font-size: 17px;
+    margin-right: 0;
+  }
+
+  .suitable-chart {
+    max-width: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .underline-bg {
+    width: 100px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .suitable-section {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .suitable-title {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .suitable-text {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .suitable-chart {
+    display: none;
+  }
+
+  .underline-bg {
+    width: 90px;
+    height: 10px;
+  }
+}
