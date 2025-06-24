@@ -136,3 +136,26 @@
   z-index: 1001;                 
   line-height: 1;
 }
+
+.input-error {
+  border: 1px solid #e74c3c !important;
+  background-color: #fff0f0;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.submit-error {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
